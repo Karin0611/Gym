@@ -1,0 +1,44 @@
+.footer {
+  background-color: $background;
+  &__inner {
+    padding: 40px 0 43px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info-text {
+    width: 174px;
+    font-size: 11px;
+    font-weight: 200;
+    margin-top: 11px;
+  }
+  &__social-item {
+    text-decoration: none;
+    margin-right: 9px;
+  }
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  &__links {
+    margin: 0 75px 0 0;
+  }
+  &__links-title {
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+  }
+  &__links-item {
+    font-size: 11px;
+    font-weight: 200;
+    margin-top: 7px;
+    list-style-type: none;
+  }
+  &__links-link {
+    text-decoration: none;
+    color: #fff;
+    &:hover {
+      color: $green;
+    }
+  }
+}
