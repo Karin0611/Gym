@@ -1,3 +1,17 @@
 $background: #192023;
 $hover: #FF6726;
 $green: #5ABA4A;
+
+%title-font {
+  font-size: 33px;
+  line-height: 49px;
+  font-family: "Playfair Display";
+  font-weight: 600;
+}
+
+%text-font {
+  font-family: Poppins, sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  line-height: 18px;
+}

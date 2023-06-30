@@ -3,6 +3,9 @@
 @import "components/footer";
 @import "components/start";
 @import "components/statistic";
+@import "components/program";
+@import "components/join";
+@import "components/price";
 
 
 html,
@@ -13,6 +16,7 @@ body {
 body {
   margin: 0;
   overflow-x: hidden;
+  background: $background;
 }
 
 .wrapper {

@@ -1,0 +1,50 @@
+.join {
+  background: linear-gradient(to right, $background 39%,#030712 39%,#030712 61%) !important;
+  margin-bottom: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__reasons-title {
+    font-size: 33px;
+    line-height: 49px;
+    font-family: "Playfair Display";
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 14px;
+  }
+  &__reasons-text {
+    font-family: Poppins, sans-serif;
+    font-size: 11px;
+    font-weight: 200;
+    margin-top: 0;
+    line-height: 16px;
+    width: 308px;
+  }
+  &__reasons-list {
+    margin-top: 34px;
+  }
+  &__reasons-item {
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 16px;
+    margin-bottom: 14px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -37px;
+      top: 0;
+      width: 19px;
+      height: 19px;
+      background-image: url("../../img/icons/icon.svg");
+    }
+  }
+
+  &__gallery-wrapper {
+   display: flex;
+  }
+
+}

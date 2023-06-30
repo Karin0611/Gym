@@ -1,0 +1,80 @@
+.price {
+  &__title {
+    @extend %title-font;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  &__subtitle {
+    @extend %text-font;
+    text-align: center;
+    width: 416px;
+    margin: 0 auto;
+  }
+  &__cards {
+    margin-top: 41px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card {
+    padding: 40px 47px 30px 47px;
+    background: #030712;
+    &:hover {
+      background: $hover;
+    }
+  }
+  &__card-title {
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    margin-bottom: 37px;
+    margin-top: 0;
+    line-height: 18px;
+  }
+  &__card-value {
+    font-family: Poppins, sans-serif;
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 18px;
+  }
+  &__list {
+    margin: 0;
+  }
+  &__list-item {
+    font-family: Poppins, sans-serif;
+    list-style-type: none;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -37px;
+      top: 0;
+      width: 19px;
+      height: 19px;
+      background-image: url("../../img/icons/icon.svg");
+    }
+  }
+  &__card-btn {
+    margin-top: 45px;
+    width: 178px;
+    height: 35px;
+    background: transparent;
+    color: $green;
+    border: 1px solid $green;
+    border-radius: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    &:hover {
+      background: white;
+      border: 1px solid white;
+    }
+  }
+}
