@@ -1,0 +1,65 @@
+.review {
+  margin-bottom: 130px;
+  &__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 42px;
+  }
+  &__title {
+    @extend %title-font;
+    width: 399px;
+    margin: 0;
+  }
+  &__info {
+    @extend %text-font;
+    width: 375px;
+    margin: 0;
+  }
+  &__slider {
+    background: #030712;
+  }
+  &__slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 465px;
+    padding: 0 64px 0 20px;
+    position: relative;
+  }
+  &__slide-quote {
+    position: absolute;
+    left: 43%;
+    transform: translateX(-43%);
+    top: -30px;
+  }
+  &__slide-photo {
+    height: 100%;
+    width: 305px;
+  }
+  &__slide-info {
+    margin-top: 76px;
+    position: relative;
+  }
+  &__slide-dumbbells {
+    position: absolute;
+    right: -26px;
+    top: -34px;
+  }
+  &__slide-name {
+    margin-top: 0;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__slide-status {
+    margin-top: 3px;
+    @extend %text-font;
+  }
+  &__slide-text {
+    @extend %text-font;
+    margin-top: 13px;
+    width: 356px;
+  }
+}

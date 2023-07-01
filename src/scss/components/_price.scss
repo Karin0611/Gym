@@ -14,12 +14,17 @@
     margin-top: 41px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 100px;
   }
   &__card {
     padding: 40px 47px 30px 47px;
     background: #030712;
     &:hover {
       background: $hover;
+    }
+    &:hover button{
+      background: white;
+      border: 1px solid white;
     }
   }
   &__card-title {
@@ -53,9 +58,30 @@
       position: absolute;
       left: -37px;
       top: 0;
-      width: 19px;
-      height: 19px;
-      background-image: url("../../img/icons/icon.svg");
+      width: 7px;
+      height: 7px;
+      background: url("../../img/icons/Vector.svg")  center no-repeat;
+      border: 1px solid $green;
+      border-radius: 50%;
+      padding: 5px;
+    }
+  }
+  &__list-item--none {
+    color: #9B9B9B;
+    &::before {
+      content: '';
+      position: absolute;
+      left: -37px;
+      top: 0;
+      width: 7px;
+      height: 7px;
+      background: url("../../img/icons/cross.svg")  center no-repeat;
+      border: 1px solid $green;
+      border-radius: 50%;
+      padding: 5px;
+      &:hover {
+        border: 1px solid white;
+      }
     }
   }
   &__card-btn {
@@ -72,9 +98,5 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
-    &:hover {
-      background: white;
-      border: 1px solid white;
-    }
   }
 }

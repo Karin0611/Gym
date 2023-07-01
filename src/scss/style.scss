@@ -6,6 +6,8 @@
 @import "components/program";
 @import "components/join";
 @import "components/price";
+@import "components/review";
+@import "components/subscribe";
 
 
 html,
@@ -37,7 +39,7 @@ body {
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 870px;
   margin: 0 auto;
 
 }

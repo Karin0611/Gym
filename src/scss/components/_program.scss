@@ -20,6 +20,9 @@
     &:hover {
       background: $hover;
     }
+    &:hover a {
+      color: white;
+    }
   }
   &__card-img {
     height: 59px;
@@ -33,6 +36,14 @@
     font-weight: 400;
     margin-top: 13px;
     margin-bottom: 10px;
+  }
+  &__inner {
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    right: 80px;
+    top: 11px;
   }
   &__card-info {
     font-family: Poppins, sans-serif;
