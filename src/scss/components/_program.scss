@@ -1,22 +1,21 @@
 .program {
   margin-bottom: 100px;
   &__title {
-    font-size: 33px;
-    line-height: 49px;
-    font-family: "Playfair Display";
-    font-weight: 600;
-    width: 346px;
+    @extend %title-font;
+    max-width: 346px;
     text-align: center;
     margin: 0 auto;
   }
   &__cards {
-    margin: 41px auto auto;
+    margin: 30px auto auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   &__card {
     padding: 20px 25px 31px 27px;
     background: #030712;
+    margin: 10px;
     &:hover {
       background: $hover;
     }

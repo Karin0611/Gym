@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Poppins:wght@200;400;600&display=swap"
@@ -24,19 +25,22 @@
                             <a class="menu__list-link" href="#">Home</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Program</a>
+                            <a class="menu__list-link" href="#program">Program</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Community</a>
+                            <a class="menu__list-link" href="#community">Community</a>
                         </li>
                         <li class="menu__list-item">
-                            <a class="menu__list-link" href="#">Pricing</a>
+                            <a class="menu__list-link" href="#price">Pricing</a>
                         </li>
                         <li class="menu__list-item">
                             <a class="menu__list-link" href="#">Login</a>
                         </li>
                     </ul>
                     <button class="menu__btn">Sign up</button>
+                </div>
+                <div class="burger">
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -45,6 +49,28 @@
     <main class="main">
         <section class="start">
             <div class="container">
+                <div class="start__heartRate">
+                    <div class="start__modal-inner">
+                        <img class="start__heartRate-img" src="img/icons/heart.svg" alt="heart">
+                        <div class="start__modal-text">Heart Rate</div>
+                        <div class="start__modal-value"><span>2245</span> bpm</div>
+                    </div>
+                </div>
+                <div class="start__calories">
+                    <div class="start__modal-inner">
+                        <div class="start__modal-text">Daily Calories</div>
+                        <div class="start__modal-value"><span>1020</span> cal</div>
+                        <div class="start__modal-rating">
+                            <div class="start__modal-column--medium"></div>
+                            <div class="start__modal-column--medium"></div>
+                            <div class="start__modal-column--medium"></div>
+                            <div class="start__modal-column--medium"></div>
+                            <div class="start__modal-column--medium"></div>
+                            <div class="start__modal-column--medium"></div>
+                            <div class="start__modal-column--medium"></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="start__info">
                     <h1 class="start__title">
                         Help For Ideal Body Fitness
@@ -91,61 +117,61 @@
                 </div>
             </div>
         </section>
-        <section class="program">
+        <section id="program" class="program">
             <div class="container">
-               <div class="program__inner">
-                   <img class="program__icon" src="img/backgrounds/program-icon.svg" alt="program">
-                   <h2 class="program__title">Our Program Build Your Best Body</h2>
+                <div class="program__inner">
+                    <img class="program__icon" src="img/backgrounds/program-icon.svg" alt="program">
+                    <h2 class="program__title">Our Program Build Your Best Body</h2>
 
-                   <div class="program__cards">
-                       <div class="program__card">
-                           <div class="program__card-img">
-                               <img src="img/icons/strength.svg" alt="icon">
-                           </div>
-                           <h3 class="program__card-title">Strength</h3>
-                           <p class="program__card-info">
-                               Value proposition investor churn rate pitch.
-                           </p>
-                           <a class="program__card-link" href="#">Join Now</a>
-                       </div>
+                    <div class="program__cards">
+                        <div class="program__card">
+                            <div class="program__card-img">
+                                <img src="img/icons/strength.svg" alt="icon">
+                            </div>
+                            <h3 class="program__card-title">Strength</h3>
+                            <p class="program__card-info">
+                                Value proposition investor churn rate pitch.
+                            </p>
+                            <a class="program__card-link" href="#">Join Now</a>
+                        </div>
 
-                       <div class="program__card">
-                           <div class="program__card-img">
-                               <img src="img/icons/physical.svg" alt="icon">
-                           </div>
-                           <h3 class="program__card-title">Physical Fitness</h3>
-                           <p class="program__card-info">
-                               Value proposition investor churn rate pitch.
-                           </p>
-                           <a class="program__card-link" href="#">Join Now</a>
-                       </div>
+                        <div class="program__card">
+                            <div class="program__card-img">
+                                <img src="img/icons/physical.svg" alt="icon">
+                            </div>
+                            <h3 class="program__card-title">Physical Fitness</h3>
+                            <p class="program__card-info">
+                                Value proposition investor churn rate pitch.
+                            </p>
+                            <a class="program__card-link" href="#">Join Now</a>
+                        </div>
 
-                       <div class="program__card">
-                           <div class="program__card-img">
-                               <img src="img/icons/flex.svg" alt="icon">
-                           </div>
-                           <h3 class="program__card-title">Flex Muscle</h3>
-                           <p class="program__card-info">
-                               Value proposition investor churn rate pitch.
-                           </p>
-                           <a class="program__card-link" href="#">Join Now</a>
-                       </div>
+                        <div class="program__card">
+                            <div class="program__card-img">
+                                <img src="img/icons/flex.svg" alt="icon">
+                            </div>
+                            <h3 class="program__card-title">Flex Muscle</h3>
+                            <p class="program__card-info">
+                                Value proposition investor churn rate pitch.
+                            </p>
+                            <a class="program__card-link" href="#">Join Now</a>
+                        </div>
 
-                       <div class="program__card">
-                           <div class="program__card-img">
-                               <img src="img/icons/fat.svg" alt="icon">
-                           </div>
-                           <h3 class="program__card-title">Fat Lose</h3>
-                           <p class="program__card-info">
-                               Value proposition investor churn rate pitch.
-                           </p>
-                           <a class="program__card-link" href="#">Join Now</a>
-                       </div>
-                   </div>
-               </div>
+                        <div class="program__card">
+                            <div class="program__card-img">
+                                <img src="img/icons/fat.svg" alt="icon">
+                            </div>
+                            <h3 class="program__card-title">Fat Lose</h3>
+                            <p class="program__card-info">
+                                Value proposition investor churn rate pitch.
+                            </p>
+                            <a class="program__card-link" href="#">Join Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="join">
+        <section id="community" class="join">
             <div class="container">
                 <div class="join__inner">
                     <div class="join__reasons">
@@ -171,15 +197,15 @@
                     </div>
                     <div class="join__gallery">
                         <div class="join__gallery-wrapper">
-                            <img class="join__gallery-img" src="img/content/content-1.jpg" alt="img">
-                            <img class="join__gallery-img" src="img/content/content-2.jpg" alt="img">
-                            <img class="join__gallery-img" src="img/content/content-3.jpg" alt="img">
+                            <img class="join__img" src="img/content/content-1.jpg" alt="img">
+                            <img class="join__img join__img--big" src="img/content/content-3.jpg" alt="img">
+                            <img class="join__img" src="img/content/content-2.jpg" alt="img">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section id="price" class="price">
             <div class="container">
                 <h2 class="price__title">Our Pricing Plan</h2>
                 <p class="price__subtitle">
@@ -191,7 +217,7 @@
                         <h3 class="price__card-title">Basic Plan</h3>
                         <div class="price__card-value">$110</div>
                         <ul class="price__list">
-                            <li class="price__list-item">5 Days in a Weak</li>
+                            <li class="price__list-item"> 5 Days in a Weak</li>
                             <li class="price__list-item">01 Sweatshirt</li>
                             <li class="price__list-item">01 Bottle of Protein</li>
                             <li class="price__list-item price__list-item--none">Access to Videos</li>
@@ -240,11 +266,19 @@
                         <div class="review__slide">
                             <img class="review__slide-quote" src="img/content/quote-left.svg" alt="">
                             <img class="review__slide-photo" src="img/content/review.jpg" alt="photo">
+                            <img class="review__slide-decor" src="img/content/decor.svg" alt="decor">
                             <div class="review__slide-info">
                                 <img class="review__slide-dumbbells" src="img/content/dumbbells.svg" alt="">
                                 <h6 class="review__slide-name">Jeason Roy</h6>
+                                <div class="review__slide-raiting">
+                                    <span class="review__slide-star review__slide-star--active">★</span>
+                                    <span class="review__slide-star review__slide-star--active">★</span>
+                                    <span class="review__slide-star review__slide-star--active">★</span>
+                                    <span class="review__slide-star review__slide-star--active">★</span>
+                                    <span class="review__slide-star">★</span>
+                                </div>
                                 <p class="review__slide-status">Member</p>
-                                <div class="review__slide-raiting"></div>
+
                                 <p class="review__slide-text">
                                     Assets learning curve vesting period direct mailing scrum
                                     project ramen user experience first mover advantage infographic early adopters.
@@ -266,12 +300,15 @@
             <div class="container">
                 <div class="subscribe__inner">
                     <img class="subscribe__star" src="img/backgrounds/Star.svg" alt="star">
+                    <img class="subscribe__decor-top" src="img/content/decor.svg" alt="decor">
+                    <img class="subscribe__decor-bottom" src="img/content/decor.svg" alt="decor">
                     <div class="subscribe__content">
                         <h2 class="subscribe__title">
                             Subscribe Our Daily Tips
                         </h2>
                         <p class="subscribe__subtitle">
-                            Hackathon early adopters innovator iPad facebook infographic pitch growth hacking. Pivot metrics
+                            Hackathon early adopters innovator iPad facebook infographic pitch growth hacking. Pivot
+                            metrics
                             lean startup.
                         </p>
                         <form class="subscribe__form">
@@ -296,7 +333,7 @@
                             <img class="footer__social-img" src="img/icons/facebook.svg" alt="icon">
                         </a>
                         <a class="footer__social-item" href="#">
-                            <img class="footer__social-img" src="img/icons/facebook.svg" alt="icon">
+                            <img class="footer__social-img" src="img/icons/twitter.svg" alt="icon">
                         </a>
                         <a class="footer__social-item" href="#">
                             <img class="footer__social-img" src="img/icons/instagram.svg" alt="icon">
@@ -365,7 +402,10 @@
             </div>
         </div>
     </footer>
+
+    <div class="btn-up btn-up_hide"></div>
 </div>
 
+<script src="js/main.min.js"></script>
 </body>
 </html>

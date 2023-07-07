@@ -7,18 +7,20 @@
   &__subtitle {
     @extend %text-font;
     text-align: center;
-    width: 416px;
+    max-width: 416px;
     margin: 0 auto;
   }
   &__cards {
-    margin-top: 41px;
+    margin-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 100px;
+    flex-wrap: wrap;
   }
   &__card {
     padding: 40px 47px 30px 47px;
     background: #030712;
+    margin: 10px;
     &:hover {
       background: $hover;
     }
@@ -26,6 +28,10 @@
       background: white;
       border: 1px solid white;
     }
+    &:hover span {
+      color: green;
+    }
+
   }
   &__card-title {
     font-family: Poppins, sans-serif;
@@ -79,9 +85,7 @@
       border: 1px solid $green;
       border-radius: 50%;
       padding: 5px;
-      &:hover {
-        border: 1px solid white;
-      }
+
     }
   }
   &__card-btn {

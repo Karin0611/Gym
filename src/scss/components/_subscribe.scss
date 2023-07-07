@@ -1,15 +1,27 @@
 .subscribe {
   &__inner {
     background: #030712;
-    padding: 67px 0 50px 0;
+    padding: 67px 20px 47px 20px;
     margin: 0 auto;
     position: relative;
   }
+
   &__star {
     position: absolute;
     top: 50px;
     right: 99px;
   }
+  &__decor-top {
+    position: absolute;
+    top: 0;
+    right: 80px;
+  }
+  &__decor-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 73px;
+  }
+
   &__content {
     margin: 0 auto;
     max-width: 382px;
@@ -18,26 +30,31 @@
   &__title {
     @extend %title-font;
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
     margin-top: 0;
+    line-height: 30px;
   }
+
   &__subtitle {
-    width: 375px;
+    max-width: 375px;
     @extend %text-font;
     text-align: center;
     margin: 0 auto 30px auto;
   }
+
   &__form {
-display: flex;
+    display: flex;
   }
+
   &__form-input {
-    padding: 8px 16px 8px 16px;
+    padding: 7px 16px 7px 16px;
     background-color: transparent;
     border: 1px solid #9DAD9A;
     width: 100%;
     border-radius: 3px;
     box-sizing: border-box;
     color: white;
+
     &::placeholder {
       font-family: Poppins, sans-serif;
       font-weight: 400;
@@ -45,9 +62,10 @@ display: flex;
       line-height: 20px;
     }
   }
+
   &__form-btn {
     min-width: 99px;
-    padding: 8px 15px;
+    padding: 7px 15px;
     background: transparent;
     cursor: pointer;
     margin-left: 7px;
@@ -58,6 +76,7 @@ display: flex;
     font-weight: 400;
     font-size: 14px;
     box-sizing: border-box;
+
     &:hover {
       background: $background;
     }

@@ -1,15 +1,12 @@
 .join {
-  background: linear-gradient(to right, $background 39%,#030712 39%,#030712 61%) !important;
+  background: linear-gradient(to right, $background 60%,#030712 60%,#030712 40%) !important;
   margin-bottom: 100px;
   &__inner {
     display: flex;
     justify-content: space-between;
   }
   &__reasons-title {
-    font-size: 33px;
-    line-height: 49px;
-    font-family: "Playfair Display";
-    font-weight: 600;
+    @extend %title-font;
     margin-top: 0;
     margin-bottom: 14px;
   }
@@ -44,7 +41,19 @@
   }
 
   &__gallery-wrapper {
-   display: flex;
-  }
+    display: grid;
+    background-color: #030712;
+    padding: 29px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 27px;
 
+  }
+  &__img--big {
+    height: 100%;
+    grid-row: span 2;
+  }
+  &__gallery-img {
+    width: 100%;
+  }
 }
